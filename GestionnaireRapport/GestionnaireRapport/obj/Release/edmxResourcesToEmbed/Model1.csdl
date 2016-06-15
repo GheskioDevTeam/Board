@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dashbaordDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="dashbaordDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DataManagers" EntityType="dashbaordDBModel.DataManager" />
+    <EntitySet Name="Modules" EntityType="dashbaordDBModel.Module" />
+    <EntitySet Name="ReportLogStatus" EntityType="dashbaordDBModel.ReportLogStatu" />
+    <EntitySet Name="Reports" EntityType="dashbaordDBModel.Report" />
+    <EntitySet Name="ReportStatus" EntityType="dashbaordDBModel.ReportStatu" />
+    <EntitySet Name="sysdiagrams" EntityType="dashbaordDBModel.sysdiagram" />
+    <AssociationSet Name="FK_Reports_Module1" Association="dashbaordDBModel.FK_Reports_Module1">
+      <End Role="Module" EntitySet="Modules" />
+      <End Role="Reports" EntitySet="Reports" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReportLogStatus_Reports" Association="dashbaordDBModel.FK_ReportLogStatus_Reports">
+      <End Role="Reports" EntitySet="Reports" />
+      <End Role="ReportLogStatus" EntitySet="ReportLogStatus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReportLogStatus_ReportStatus" Association="dashbaordDBModel.FK_ReportLogStatus_ReportStatus">
+      <End Role="ReportStatus" EntitySet="ReportStatus" />
+      <End Role="ReportLogStatus" EntitySet="ReportLogStatus" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="DataManager">
+    <Key>
+      <PropertyRef Name="DMCardID" />
+    </Key>
+    <Property Name="DMCardID" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="DMFirstName" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="DMLastName" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="CreatedAt" Type="DateTime" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UpdatedAt" Type="DateTime" />
+    <Property Name="UpdateBy" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="VoidedAt" Type="DateTime" />
+    <Property Name="VoidedBy" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Voided" Type="Boolean" />
+    <Property Name="Active" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Module">
+    <Key>
+      <PropertyRef Name="ModuleID" />
+    </Key>
+    <Property Name="ModuleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ModuleName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ModuleDesc" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="CreatedAt" Type="DateTime" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UpdatedAt" Type="DateTime" />
+    <Property Name="UpdateBy" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="VoidedAt" Type="DateTime" />
+    <Property Name="VoidedBy" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="DMCardID" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Reports" Relationship="dashbaordDBModel.FK_Reports_Module1" FromRole="Module" ToRole="Reports" />
+  </EntityType>
+  <EntityType Name="ReportLogStatu">
+    <Key>
+      <PropertyRef Name="ReportID" />
+      <PropertyRef Name="StatusID" />
+    </Key>
+    <Property Name="ReportID" Type="Int32" Nullable="false" />
+    <Property Name="StatusID" Type="Int32" Nullable="false" />
+    <Property Name="Comment" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="CreatedAt" Type="DateTime" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UpdatedAt" Type="DateTime" />
+    <Property Name="UpdateBy" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="VoidedAt" Type="DateTime" />
+    <Property Name="VoidedBy" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Voided" Type="Boolean" />
+    <Property Name="Active" Type="Boolean" />
+    <NavigationProperty Name="Report" Relationship="dashbaordDBModel.FK_ReportLogStatus_Reports" FromRole="ReportLogStatus" ToRole="Reports" />
+    <NavigationProperty Name="ReportStatu" Relationship="dashbaordDBModel.FK_ReportLogStatus_ReportStatus" FromRole="ReportLogStatus" ToRole="ReportStatus" />
+  </EntityType>
+  <EntityType Name="Report">
+    <Key>
+      <PropertyRef Name="ReportID" />
+    </Key>
+    <Property Name="ReportID" Type="Int32" Nullable="false" />
+    <Property Name="ModuleID" Type="Int32" />
+    <Property Name="ReportName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="ReportDesc" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ServerName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ServerPath" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="FolderPath" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ReportFileName" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedAt" Type="DateTime" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UpdatedAt" Type="DateTime" />
+    <Property Name="UpdateBy" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="VoidedAt" Type="DateTime" />
+    <Property Name="VoidedBy" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="PublishedBy" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="CurrentStatus" Type="Int32" />
+    <NavigationProperty Name="Module" Relationship="dashbaordDBModel.FK_Reports_Module1" FromRole="Reports" ToRole="Module" />
+    <NavigationProperty Name="ReportLogStatus" Relationship="dashbaordDBModel.FK_ReportLogStatus_Reports" FromRole="Reports" ToRole="ReportLogStatus" />
+  </EntityType>
+  <EntityType Name="ReportStatu">
+    <Key>
+      <PropertyRef Name="StatusID" />
+    </Key>
+    <Property Name="StatusID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StatusName" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="StatusDesc" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="ReportLogStatus" Relationship="dashbaordDBModel.FK_ReportLogStatus_ReportStatus" FromRole="ReportStatus" ToRole="ReportLogStatus" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_Reports_Module1">
+    <End Role="Module" Type="dashbaordDBModel.Module" Multiplicity="0..1" />
+    <End Role="Reports" Type="dashbaordDBModel.Report" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Module">
+        <PropertyRef Name="ModuleID" />
+      </Principal>
+      <Dependent Role="Reports">
+        <PropertyRef Name="ModuleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReportLogStatus_Reports">
+    <End Role="Reports" Type="dashbaordDBModel.Report" Multiplicity="1" />
+    <End Role="ReportLogStatus" Type="dashbaordDBModel.ReportLogStatu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reports">
+        <PropertyRef Name="ReportID" />
+      </Principal>
+      <Dependent Role="ReportLogStatus">
+        <PropertyRef Name="ReportID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReportLogStatus_ReportStatus">
+    <End Role="ReportStatus" Type="dashbaordDBModel.ReportStatu" Multiplicity="1" />
+    <End Role="ReportLogStatus" Type="dashbaordDBModel.ReportLogStatu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReportStatus">
+        <PropertyRef Name="StatusID" />
+      </Principal>
+      <Dependent Role="ReportLogStatus">
+        <PropertyRef Name="StatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,16 @@
+c:\users\marvel\documents\visual studio 2010\Projects\GestionnaireRapport\GestionnaireRapport\bin\GestionnaireRapport.dll
+c:\users\marvel\documents\visual studio 2010\Projects\GestionnaireRapport\GestionnaireRapport\bin\GestionnaireRapport.pdb
+c:\users\marvel\documents\visual studio 2010\Projects\GestionnaireRapport\GestionnaireRapport\bin\GestionnaireRapport.xml
+c:\users\marvel\documents\visual studio 2010\Projects\GestionnaireRapport\GestionnaireRapport\obj\Debug\GestionnaireRapport.Resources.resources
+c:\users\marvel\documents\visual studio 2010\Projects\GestionnaireRapport\GestionnaireRapport\obj\Debug\GestionnaireRapport.vbproj.GenerateResource.Cache
+c:\users\marvel\documents\visual studio 2010\Projects\GestionnaireRapport\GestionnaireRapport\obj\Debug\GestionnaireRapport.dll
+c:\users\marvel\documents\visual studio 2010\Projects\GestionnaireRapport\GestionnaireRapport\obj\Debug\GestionnaireRapport.xml
+c:\users\marvel\documents\visual studio 2010\Projects\GestionnaireRapport\GestionnaireRapport\obj\Debug\GestionnaireRapport.pdb
+C:\Users\Core i7\Documents\Visual Studio 2010\Projects\GestionnaireRapport\GestionnaireRapport\bin\GestionnaireRapport.dll
+C:\Users\Core i7\Documents\Visual Studio 2010\Projects\GestionnaireRapport\GestionnaireRapport\bin\GestionnaireRapport.pdb
+C:\Users\Core i7\Documents\Visual Studio 2010\Projects\GestionnaireRapport\GestionnaireRapport\bin\GestionnaireRapport.xml
+C:\Users\Core i7\Documents\Visual Studio 2010\Projects\GestionnaireRapport\GestionnaireRapport\obj\Debug\GestionnaireRapport.Resources.resources
+C:\Users\Core i7\Documents\Visual Studio 2010\Projects\GestionnaireRapport\GestionnaireRapport\obj\Debug\GestionnaireRapport.vbproj.GenerateResource.Cache
+C:\Users\Core i7\Documents\Visual Studio 2010\Projects\GestionnaireRapport\GestionnaireRapport\obj\Debug\GestionnaireRapport.dll
+C:\Users\Core i7\Documents\Visual Studio 2010\Projects\GestionnaireRapport\GestionnaireRapport\obj\Debug\GestionnaireRapport.xml
+C:\Users\Core i7\Documents\Visual Studio 2010\Projects\GestionnaireRapport\GestionnaireRapport\obj\Debug\GestionnaireRapport.pdb

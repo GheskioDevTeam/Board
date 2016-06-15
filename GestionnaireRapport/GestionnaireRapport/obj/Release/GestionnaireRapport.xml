@@ -1,0 +1,556 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+GestionnaireRapport
+</name>
+</assembly>
+<members>
+<member name="F:GestionnaireRapport._Module.FormView1">
+	<summary>
+FormView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport._Module.EntityDataSource1">
+	<summary>
+EntityDataSource1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport._Module.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.Site.HeadContent">
+	<summary>
+HeadContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.Site.MasterPageScriptManager">
+	<summary>
+MasterPageScriptManager control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.Site.HeadLoginView">
+	<summary>
+HeadLoginView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.Site.HeadHomeLink">
+	<summary>
+HeadHomeLink control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.Site.HeadAboutLink">
+	<summary>
+HeadAboutLink control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.Site.MainContent">
+	<summary>
+MainContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.SiteMaster2.Form1">
+	<summary>
+Form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.SiteMaster2.Content">
+	<summary>
+Content control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.ChangePassword.ChangeUserPassword">
+	<summary>
+ChangeUserPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.Register.RegisterUser">
+	<summary>
+RegisterUser control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.Register.RegisterUserWizardStep">
+	<summary>
+RegisterUserWizardStep control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.Login.RegisterHyperLink">
+	<summary>
+RegisterHyperLink control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.Login.LoginUser">
+	<summary>
+LoginUser control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="M:GestionnaireRapport.dashbaordDBEntities.#ctor">
+	<summary>
+ Initializes a new dashbaordDBEntities object using the connection string found in the 'dashbaordDBEntities' section of the application configuration file.
+ </summary>
+</member><member name="M:GestionnaireRapport.dashbaordDBEntities.#ctor(System.String)">
+	<summary>
+ Initialize a new dashbaordDBEntities object.
+ </summary>
+</member><member name="M:GestionnaireRapport.dashbaordDBEntities.#ctor(System.Data.EntityClient.EntityConnection)">
+	<summary>
+ Initialize a new dashbaordDBEntities object.
+ </summary>
+</member><member name="P:GestionnaireRapport.dashbaordDBEntities.DataManagers">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.dashbaordDBEntities.Modules">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.dashbaordDBEntities.ReportLogStatus">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.dashbaordDBEntities.Reports">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.dashbaordDBEntities.ReportStatus">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.dashbaordDBEntities.sysdiagrams">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:GestionnaireRapport.dashbaordDBEntities.AddToDataManagers(GestionnaireRapport.DataManager)">
+	<summary>
+ Deprecated Method for adding a new object to the DataManagers EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:GestionnaireRapport.dashbaordDBEntities.AddToModules(GestionnaireRapport.Module)">
+	<summary>
+ Deprecated Method for adding a new object to the Modules EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:GestionnaireRapport.dashbaordDBEntities.AddToReportLogStatus(GestionnaireRapport.ReportLogStatu)">
+	<summary>
+ Deprecated Method for adding a new object to the ReportLogStatus EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:GestionnaireRapport.dashbaordDBEntities.AddToReports(GestionnaireRapport.Report)">
+	<summary>
+ Deprecated Method for adding a new object to the Reports EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:GestionnaireRapport.dashbaordDBEntities.AddToReportStatus(GestionnaireRapport.ReportStatu)">
+	<summary>
+ Deprecated Method for adding a new object to the ReportStatus EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:GestionnaireRapport.dashbaordDBEntities.AddTosysdiagrams(GestionnaireRapport.sysdiagram)">
+	<summary>
+ Deprecated Method for adding a new object to the sysdiagrams EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="T:GestionnaireRapport.dashbaordDBEntities">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:GestionnaireRapport.DataManager.CreateDataManager(System.String)">
+	<summary>
+ Create a new DataManager object.
+ </summary>
+	<param name="dMCardID">Initial value of the DMCardID property.</param>
+</member><member name="P:GestionnaireRapport.DataManager.DMCardID">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.DataManager.DMFirstName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.DataManager.DMLastName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.DataManager.CreatedAt">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.DataManager.CreatedBy">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.DataManager.UpdatedAt">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.DataManager.UpdateBy">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.DataManager.VoidedAt">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.DataManager.VoidedBy">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.DataManager.Voided">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.DataManager.Active">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:GestionnaireRapport.DataManager">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:GestionnaireRapport.Module.CreateModule(System.Int32)">
+	<summary>
+ Create a new Module object.
+ </summary>
+	<param name="moduleID">Initial value of the ModuleID property.</param>
+</member><member name="P:GestionnaireRapport.Module.ModuleID">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Module.ModuleName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Module.ModuleDesc">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Module.CreatedAt">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Module.CreatedBy">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Module.UpdatedAt">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Module.UpdateBy">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Module.VoidedAt">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Module.VoidedBy">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Module.DMCardID">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Module.Reports">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:GestionnaireRapport.Module">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:GestionnaireRapport.Report.CreateReport(System.Int32,System.String,System.String,System.String)">
+	<summary>
+ Create a new Report object.
+ </summary>
+	<param name="reportID">Initial value of the ReportID property.</param>
+	<param name="reportDesc">Initial value of the ReportDesc property.</param>
+	<param name="serverName">Initial value of the ServerName property.</param>
+	<param name="serverPath">Initial value of the ServerPath property.</param>
+</member><member name="P:GestionnaireRapport.Report.ReportID">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Report.ModuleID">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Report.ReportName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Report.ReportDesc">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Report.ServerName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Report.ServerPath">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Report.FolderPath">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Report.ReportFileName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Report.CreatedAt">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Report.CreatedBy">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Report.UpdatedAt">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Report.UpdateBy">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Report.VoidedAt">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Report.VoidedBy">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Report.PublishedBy">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Report.CurrentStatus">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Report.Module">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Report.ModuleReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Report.ReportLogStatus">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:GestionnaireRapport.Report">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:GestionnaireRapport.ReportLogStatu.CreateReportLogStatu(System.Int32,System.Int32)">
+	<summary>
+ Create a new ReportLogStatu object.
+ </summary>
+	<param name="reportID">Initial value of the ReportID property.</param>
+	<param name="statusID">Initial value of the StatusID property.</param>
+</member><member name="P:GestionnaireRapport.ReportLogStatu.ReportID">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.ReportLogStatu.StatusID">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.ReportLogStatu.Comment">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.ReportLogStatu.CreatedAt">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.ReportLogStatu.CreatedBy">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.ReportLogStatu.UpdatedAt">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.ReportLogStatu.UpdateBy">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.ReportLogStatu.VoidedAt">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.ReportLogStatu.VoidedBy">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.ReportLogStatu.Voided">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.ReportLogStatu.Active">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.ReportLogStatu.Report">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.ReportLogStatu.ReportReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.ReportLogStatu.ReportStatu">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.ReportLogStatu.ReportStatuReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:GestionnaireRapport.ReportLogStatu">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:GestionnaireRapport.ReportStatu.CreateReportStatu(System.Int32)">
+	<summary>
+ Create a new ReportStatu object.
+ </summary>
+	<param name="statusID">Initial value of the StatusID property.</param>
+</member><member name="P:GestionnaireRapport.ReportStatu.StatusID">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.ReportStatu.StatusName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.ReportStatu.StatusDesc">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.ReportStatu.ReportLogStatus">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:GestionnaireRapport.ReportStatu">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:GestionnaireRapport.sysdiagram.Createsysdiagram(System.String,System.Int32,System.Int32)">
+	<summary>
+ Create a new sysdiagram object.
+ </summary>
+	<param name="name">Initial value of the name property.</param>
+	<param name="principal_id">Initial value of the principal_id property.</param>
+	<param name="diagram_id">Initial value of the diagram_id property.</param>
+</member><member name="P:GestionnaireRapport.sysdiagram.name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.sysdiagram.principal_id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.sysdiagram.diagram_id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.sysdiagram.version">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.sysdiagram.definition">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:GestionnaireRapport.sysdiagram">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.My.MyWebExtension.Application">
+	<summary>
+ Returns information about the current application.
+ </summary>
+</member><member name="P:GestionnaireRapport.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:GestionnaireRapport.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:GestionnaireRapport.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:GestionnaireRapport.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:GestionnaireRapport.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="P:GestionnaireRapport.My.MyWebExtension.WebServices">
+	<summary>
+ Provides access to WebServices added to this project.
+ </summary>
+</member><member name="T:GestionnaireRapport.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dashbaordDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="dashbaordDBModelStoreContainer">
+    <EntitySet Name="DataManager" EntityType="dashbaordDBModel.Store.DataManager" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Module" EntityType="dashbaordDBModel.Store.Module" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ReportLogStatus" EntityType="dashbaordDBModel.Store.ReportLogStatus" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Reports" EntityType="dashbaordDBModel.Store.Reports" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ReportStatus" EntityType="dashbaordDBModel.Store.ReportStatus" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="dashbaordDBModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Module_DataManager" Association="dashbaordDBModel.Store.FK_Module_DataManager">
+      <End Role="DataManager" EntitySet="DataManager" />
+      <End Role="Module" EntitySet="Module" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReportLogStatus_Reports" Association="dashbaordDBModel.Store.FK_ReportLogStatus_Reports">
+      <End Role="Reports" EntitySet="Reports" />
+      <End Role="ReportLogStatus" EntitySet="ReportLogStatus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReportLogStatus_ReportStatus" Association="dashbaordDBModel.Store.FK_ReportLogStatus_ReportStatus">
+      <End Role="ReportStatus" EntitySet="ReportStatus" />
+      <End Role="ReportLogStatus" EntitySet="ReportLogStatus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reports_Module1" Association="dashbaordDBModel.Store.FK_Reports_Module1">
+      <End Role="Module" EntitySet="Module" />
+      <End Role="Reports" EntitySet="Reports" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="DataManager">
+    <Key>
+      <PropertyRef Name="DMCardID" />
+    </Key>
+    <Property Name="DMCardID" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="DMFirstName" Type="nchar" MaxLength="10" />
+    <Property Name="DMLastName" Type="nchar" MaxLength="10" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="UpdateBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="VoidedAt" Type="datetime" />
+    <Property Name="VoidedBy" Type="nvarchar" MaxLength="256" />
+    <Property Name="Voided" Type="bit" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="Module">
+    <Key>
+      <PropertyRef Name="ModuleID" />
+    </Key>
+    <Property Name="ModuleID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ModuleName" Type="nvarchar" MaxLength="256" />
+    <Property Name="ModuleDesc" Type="text" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="UpdateBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="VoidedAt" Type="datetime" />
+    <Property Name="VoidedBy" Type="nvarchar" MaxLength="256" />
+    <Property Name="DMCardID" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="ReportLogStatus">
+    <Key>
+      <PropertyRef Name="ReportID" />
+      <PropertyRef Name="StatusID" />
+    </Key>
+    <Property Name="ReportID" Type="int" Nullable="false" />
+    <Property Name="StatusID" Type="int" Nullable="false" />
+    <Property Name="Comment" Type="nchar" MaxLength="10" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="UpdateBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="VoidedAt" Type="datetime" />
+    <Property Name="VoidedBy" Type="nvarchar" MaxLength="256" />
+    <Property Name="Voided" Type="bit" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="Reports">
+    <Key>
+      <PropertyRef Name="ReportID" />
+    </Key>
+    <Property Name="ReportID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ModuleID" Type="int" />
+    <Property Name="ReportName" Type="nvarchar" MaxLength="256" />
+    <Property Name="ReportDesc" Type="text" Nullable="false" />
+    <Property Name="ServerName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ServerPath" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FolderPath" Type="nvarchar(max)" />
+    <Property Name="ReportFileName" Type="nvarchar(max)" />
+    <Property Name="CreatedAt" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedAt" Type="datetime" />
+    <Property Name="UpdateBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="VoidedAt" Type="datetime" />
+    <Property Name="VoidedBy" Type="nvarchar" MaxLength="256" />
+    <Property Name="PublishedBy" Type="nvarchar" MaxLength="10" />
+    <Property Name="CurrentStatus" Type="int" />
+  </EntityType>
+  <EntityType Name="ReportStatus">
+    <Key>
+      <PropertyRef Name="StatusID" />
+    </Key>
+    <Property Name="StatusID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StatusName" Type="nvarchar" MaxLength="10" />
+    <Property Name="StatusDesc" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_Module_DataManager">
+    <End Role="DataManager" Type="dashbaordDBModel.Store.DataManager" Multiplicity="0..1" />
+    <End Role="Module" Type="dashbaordDBModel.Store.Module" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DataManager">
+        <PropertyRef Name="DMCardID" />
+      </Principal>
+      <Dependent Role="Module">
+        <PropertyRef Name="DMCardID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReportLogStatus_Reports">
+    <End Role="Reports" Type="dashbaordDBModel.Store.Reports" Multiplicity="1" />
+    <End Role="ReportLogStatus" Type="dashbaordDBModel.Store.ReportLogStatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reports">
+        <PropertyRef Name="ReportID" />
+      </Principal>
+      <Dependent Role="ReportLogStatus">
+        <PropertyRef Name="ReportID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReportLogStatus_ReportStatus">
+    <End Role="ReportStatus" Type="dashbaordDBModel.Store.ReportStatus" Multiplicity="1" />
+    <End Role="ReportLogStatus" Type="dashbaordDBModel.Store.ReportLogStatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReportStatus">
+        <PropertyRef Name="StatusID" />
+      </Principal>
+      <Dependent Role="ReportLogStatus">
+        <PropertyRef Name="StatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reports_Module1">
+    <End Role="Module" Type="dashbaordDBModel.Store.Module" Multiplicity="0..1" />
+    <End Role="Reports" Type="dashbaordDBModel.Store.Reports" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Module">
+        <PropertyRef Name="ModuleID" />
+      </Principal>
+      <Dependent Role="Reports">
+        <PropertyRef Name="ModuleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+</Schema>
