@@ -7,6 +7,10 @@
     <EntitySet Name="Reports" EntityType="dashbaordDBModel.Store.Reports" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="ReportStatus" EntityType="dashbaordDBModel.Store.ReportStatus" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="sysdiagrams" EntityType="dashbaordDBModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Module_DataManager" Association="dashbaordDBModel.Store.FK_Module_DataManager">
+      <End Role="DataManager" EntitySet="DataManager" />
+      <End Role="Module" EntitySet="Module" />
+    </AssociationSet>
     <AssociationSet Name="FK_ReportLogStatus_Reports" Association="dashbaordDBModel.Store.FK_ReportLogStatus_Reports">
       <End Role="Reports" EntitySet="Reports" />
       <End Role="ReportLogStatus" EntitySet="ReportLogStatus" />
@@ -72,7 +76,7 @@
     <Key>
       <PropertyRef Name="ReportID" />
     </Key>
-    <Property Name="ReportID" Type="int" Nullable="false" />
+    <Property Name="ReportID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="ModuleID" Type="int" />
     <Property Name="ReportName" Type="nvarchar" MaxLength="256" />
     <Property Name="ReportDesc" Type="text" Nullable="false" />
@@ -107,6 +111,18 @@
     <Property Name="version" Type="int" />
     <Property Name="definition" Type="varbinary(max)" />
   </EntityType>
+  <Association Name="FK_Module_DataManager">
+    <End Role="DataManager" Type="dashbaordDBModel.Store.DataManager" Multiplicity="0..1" />
+    <End Role="Module" Type="dashbaordDBModel.Store.Module" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DataManager">
+        <PropertyRef Name="DMCardID" />
+      </Principal>
+      <Dependent Role="Module">
+        <PropertyRef Name="DMCardID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_ReportLogStatus_Reports">
     <End Role="Reports" Type="dashbaordDBModel.Store.Reports" Multiplicity="1" />
     <End Role="ReportLogStatus" Type="dashbaordDBModel.Store.ReportLogStatus" Multiplicity="*" />

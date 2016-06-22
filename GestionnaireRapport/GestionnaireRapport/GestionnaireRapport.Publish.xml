@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="http://SERVEMR" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="Default Web Site/GHES_ReportManager" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="True" profileName="Profile1" publishMethod="MSDeploy" replaceMatchingFiles="True" userName="marvel" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJ1PXipYlhkq9LpCSBs6OdgAAAAACAAAAAAADZgAAwAAAABAAAADJqg55gff4xRQfvxPkHQi4AAAAAASAAACgAAAAEAAAAIfwvSoRTlQnK2R3qtGjl6AgAAAAKJGLGzM8ZNvnbEdG5iKXv/InScIwKexBLs/RmGwwZEsUAAAAgop9uEgBK2gH32cEfc42vuc8Tms=" SelectedForPublish="True" />
+</publishData>

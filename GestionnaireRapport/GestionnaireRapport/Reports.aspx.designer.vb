@@ -41,40 +41,13 @@ Partial Public Class Reports
     Protected WithEvents QueryExtender1 As Global.System.Web.UI.WebControls.QueryExtender
 
     '''<summary>
-    '''DDLSearchModule control.
+    '''NomDuRapporTextBox control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DDLSearchModule As Global.System.Web.UI.WebControls.DropDownList
-
-    '''<summary>
-    '''SqlDataSource3 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SqlDataSource3 As Global.System.Web.UI.WebControls.SqlDataSource
-
-    '''<summary>
-    '''DDLSearchReport control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents DDLSearchReport As Global.System.Web.UI.WebControls.DropDownList
-
-    '''<summary>
-    '''SqlDataSource4 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SqlDataSource4 As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents NomDuRapporTextBox As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''GridView1 control.
@@ -84,4 +57,13 @@ Partial Public Class Reports
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''SqlDataSource4 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SqlDataSource4 As Global.System.Web.UI.WebControls.SqlDataSource
 End Class

@@ -22,6 +22,22 @@ EntityDataSource1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:GestionnaireRapport._Module.QueryExtender1">
+	<summary>
+QueryExtender1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport._Module.ModuleIDTextSearch">
+	<summary>
+ModuleIDTextSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:GestionnaireRapport._Module.GridView1">
 	<summary>
 GridView1 control.
@@ -89,6 +105,46 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:GestionnaireRapport.SiteMaster2.Content">
 	<summary>
 Content control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.Reports.FormView1">
+	<summary>
+FormView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.Reports.EntityDataSource1">
+	<summary>
+EntityDataSource1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.Reports.QueryExtender1">
+	<summary>
+QueryExtender1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.Reports.NomDuRapporTextBox">
+	<summary>
+NomDuRapporTextBox control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.Reports.GridView1">
+	<summary>
+GridView1 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -247,6 +303,10 @@ To modify move field declaration from designer file to code-behind file.
 	<summary>
  No Metadata Documentation available.
  </summary>
+</member><member name="P:GestionnaireRapport.DataManager.Modules">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
 </member><member name="T:GestionnaireRapport.DataManager">
 	<summary>
  No Metadata Documentation available.
@@ -297,6 +357,14 @@ To modify move field declaration from designer file to code-behind file.
  No Metadata Documentation available.
  </summary>
 </member><member name="P:GestionnaireRapport.Module.Reports">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Module.DataManager">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:GestionnaireRapport.Module.DataManagerReference">
 	<summary>
  No Metadata Documentation available.
  </summary>

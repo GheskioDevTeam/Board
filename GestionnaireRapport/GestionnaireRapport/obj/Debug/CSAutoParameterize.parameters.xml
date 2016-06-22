@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="ApplicationServices-Web.config Connection String" description="ApplicationServices Connection String used in web.config by the application to access the database." defaultvalue="data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\aspnetdb.mdf;User Instance=true" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\marvel\\documents\\visual\ studio\ 2010\\Projects\\GestionnaireRapport\\GestionnaireRapport\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ApplicationServices']/@connectionString" />
+  </parameter>
+  <parameter name="dashbaordDBEntities-Web.config Connection String" description="dashbaordDBEntities Connection String used in web.config by the application to access the database." defaultvalue="metadata=res://*/Entities.Model1.csdl|res://*/Entities.Model1.ssdl|res://*/Entities.Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=reportServ\GHESKIODEV;initial catalog=dashbaordDB;Persist Security Info=True;User ID=sa;Password=itdev$admin2008;multipleactiveresultsets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\marvel\\documents\\visual\ studio\ 2010\\Projects\\GestionnaireRapport\\GestionnaireRapport\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='dashbaordDBEntities']/@connectionString" />
+  </parameter>
+  <parameter name="dashbaordDBConnectionString-Web.config Connection String" description="dashbaordDBConnectionString Connection String used in web.config by the application to access the database." defaultvalue="Data Source=reportServ\GHESKIODEV;Initial Catalog=dashbaordDB;Persist Security Info=True;User ID=sa;Password=itdev$admin2008" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\marvel\\documents\\visual\ studio\ 2010\\Projects\\GestionnaireRapport\\GestionnaireRapport\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='dashbaordDBConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="dashbaordDBConnectionString2-Web.config Connection String" description="dashbaordDBConnectionString2 Connection String used in web.config by the application to access the database." defaultvalue="Data Source=reportServ\GHESKIODEV;Initial Catalog=dashbaordDB;Persist Security Info=True;User ID=sa;Password=itdev$admin2008" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\marvel\\documents\\visual\ studio\ 2010\\Projects\\GestionnaireRapport\\GestionnaireRapport\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='dashbaordDBConnectionString2']/@connectionString" />
+  </parameter>
+</parameters>

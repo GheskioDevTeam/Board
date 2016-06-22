@@ -19,6 +19,10 @@
       <End Role="ReportStatus" EntitySet="ReportStatus" />
       <End Role="ReportLogStatus" EntitySet="ReportLogStatus" />
     </AssociationSet>
+    <AssociationSet Name="FK_Module_DataManager" Association="dashbaordDBModel.FK_Module_DataManager">
+      <End Role="DataManager" EntitySet="DataManagers" />
+      <End Role="Module" EntitySet="Modules" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="DataManager">
     <Key>
@@ -35,6 +39,7 @@
     <Property Name="VoidedBy" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
     <Property Name="Voided" Type="Boolean" />
     <Property Name="Active" Type="Boolean" />
+    <NavigationProperty Name="Modules" Relationship="dashbaordDBModel.FK_Module_DataManager" FromRole="DataManager" ToRole="Module" />
   </EntityType>
   <EntityType Name="Module">
     <Key>
@@ -51,6 +56,7 @@
     <Property Name="VoidedBy" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
     <Property Name="DMCardID" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
     <NavigationProperty Name="Reports" Relationship="dashbaordDBModel.FK_Reports_Module1" FromRole="Module" ToRole="Reports" />
+    <NavigationProperty Name="DataManager" Relationship="dashbaordDBModel.FK_Module_DataManager" FromRole="Module" ToRole="DataManager" />
   </EntityType>
   <EntityType Name="ReportLogStatu">
     <Key>
@@ -146,6 +152,18 @@
       </Principal>
       <Dependent Role="ReportLogStatus">
         <PropertyRef Name="StatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Module_DataManager">
+    <End Type="dashbaordDBModel.DataManager" Role="DataManager" Multiplicity="0..1" />
+    <End Type="dashbaordDBModel.Module" Role="Module" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DataManager">
+        <PropertyRef Name="DMCardID" />
+      </Principal>
+      <Dependent Role="Module">
+        <PropertyRef Name="DMCardID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

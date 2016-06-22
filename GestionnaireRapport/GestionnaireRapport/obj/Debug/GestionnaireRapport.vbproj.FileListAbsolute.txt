@@ -14,3 +14,4 @@ C:\Users\Core i7\Documents\Visual Studio 2010\Projects\GestionnaireRapport\Gesti
 C:\Users\Core i7\Documents\Visual Studio 2010\Projects\GestionnaireRapport\GestionnaireRapport\obj\Debug\GestionnaireRapport.dll
 C:\Users\Core i7\Documents\Visual Studio 2010\Projects\GestionnaireRapport\GestionnaireRapport\obj\Debug\GestionnaireRapport.xml
 C:\Users\Core i7\Documents\Visual Studio 2010\Projects\GestionnaireRapport\GestionnaireRapport\obj\Debug\GestionnaireRapport.pdb
+C:\Users\marvel\documents\visual studio 2010\Projects\GestionnaireRapport\GestionnaireRapport\obj\Debug\GestionnaireRapport.vbprojResolveAssemblyReference.cache

@@ -6,7 +6,87 @@ GestionnaireRapport
 </name>
 </assembly>
 <members>
-<member name="F:GestionnaireRapport._Module.FormView1">
+<member name="F:GestionnaireRapport.SiteMaster2.Form1">
+	<summary>
+Form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.SiteMaster2.ListView1">
+	<summary>
+ListView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.SiteMaster2.EntityDataSource1">
+	<summary>
+EntityDataSource1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.SiteMaster2.Content">
+	<summary>
+Content control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.ReportsManager.ReportNameLabel">
+	<summary>
+ReportNameLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.ReportsManager.RepNameTextBox">
+	<summary>
+RepNameTextBox control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.ReportsManager.ReportDesc">
+	<summary>
+ReportDesc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.ReportsManager.ReportNameLabel1">
+	<summary>
+ReportNameLabel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.ReportsManager.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.ReportsManager.ReportViewer1">
+	<summary>
+ReportViewer1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport._Module.FormView1">
 	<summary>
 FormView1 control.
 </summary>
@@ -94,22 +174,47 @@ MainContent control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:GestionnaireRapport.SiteMaster2.Form1">
+</member><member name="F:GestionnaireRapport.ChangePassword.ChangeUserPassword">
 	<summary>
-Form1 control.
+ChangeUserPassword control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:GestionnaireRapport.SiteMaster2.Content">
+</member><member name="P:GestionnaireRapport.My.MyWebExtension.Application">
 	<summary>
-Content control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
+ Returns information about the current application.
+ </summary>
+</member><member name="P:GestionnaireRapport.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:GestionnaireRapport.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:GestionnaireRapport.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:GestionnaireRapport.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:GestionnaireRapport.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="P:GestionnaireRapport.My.MyWebExtension.WebServices">
+	<summary>
+ Provides access to WebServices added to this project.
+ </summary>
+</member><member name="T:GestionnaireRapport.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
 </member><member name="F:GestionnaireRapport.Reports.FormView1">
 	<summary>
 FormView1 control.
@@ -134,33 +239,9 @@ QueryExtender1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:GestionnaireRapport.Reports.DDLSearchModule">
+</member><member name="F:GestionnaireRapport.Reports.NomDuRapporTextBox">
 	<summary>
-DDLSearchModule control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:GestionnaireRapport.Reports.SqlDataSource3">
-	<summary>
-SqlDataSource3 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:GestionnaireRapport.Reports.DDLSearchReport">
-	<summary>
-DDLSearchReport control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:GestionnaireRapport.Reports.SqlDataSource4">
-	<summary>
-SqlDataSource4 control.
+NomDuRapporTextBox control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -174,9 +255,9 @@ GridView1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:GestionnaireRapport.ChangePassword.ChangeUserPassword">
+</member><member name="F:GestionnaireRapport.Reports.SqlDataSource4">
 	<summary>
-ChangeUserPassword control.
+SqlDataSource4 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -193,6 +274,38 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:GestionnaireRapport.Register.RegisterUserWizardStep">
 	<summary>
 RegisterUserWizardStep control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.ReportTimeLine.FormView1">
+	<summary>
+FormView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.ReportTimeLine.EntityDataSource1">
+	<summary>
+EntityDataSource1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.ReportTimeLine.SqlDataSource1">
+	<summary>
+SqlDataSource1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:GestionnaireRapport.ReportTimeLine.EntityDataSource2">
+	<summary>
+EntityDataSource2 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -610,39 +723,6 @@ To modify move field declaration from designer file to code-behind file.
 	<summary>
  No Metadata Documentation available.
  </summary>
-</member><member name="P:GestionnaireRapport.My.MyWebExtension.Application">
-	<summary>
- Returns information about the current application.
- </summary>
-</member><member name="P:GestionnaireRapport.My.MyWebExtension.Computer">
-	<summary>
- Returns information about the host computer.
- </summary>
-</member><member name="P:GestionnaireRapport.My.MyWebExtension.User">
-	<summary>
- Returns information for the current Web user.
- </summary>
-</member><member name="P:GestionnaireRapport.My.MyWebExtension.Request">
-	<summary>
- Returns Request object.
- </summary>
-</member><member name="P:GestionnaireRapport.My.MyWebExtension.Response">
-	<summary>
- Returns Response object.
- </summary>
-</member><member name="P:GestionnaireRapport.My.MyWebExtension.Log">
-	<summary>
- Returns the Asp log object.
- </summary>
-</member><member name="P:GestionnaireRapport.My.MyWebExtension.WebServices">
-	<summary>
- Provides access to WebServices added to this project.
- </summary>
-</member><member name="T:GestionnaireRapport.My.MyWebExtension">
-	<summary>
- Module used to define the properties that are available in the My Namespace for Web projects.
- </summary>
-	<remarks></remarks>
 </member>
 </members>
 </doc>
